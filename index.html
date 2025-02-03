@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everbloom</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            position: relative;
+            background: url('your-banner-image.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            /* Darker overlay */
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar ">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Everbloom
+            </a>
+            <button class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシー</a></li>
+                <li><a href="terms.html">利用規約</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h2>あらゆる瞬間に寄り添う優雅な花々</h2>
+            <p>華やかなフラワーアレンジメントで大切な人の一日を彩りましょう</p>
+            <a href="#productSection" class="cta-button">今すぐ購入</a>
+        </div>
+    </div>
+
+    <section class="about-section" id="aboutSection">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="subtitle">私たちについて</span>
+                    <h1>1970年から特別なショッピング体験を提供し続けてきました</h1>
+                    <p class="description">
+                        Everbloomでは、花は単なる贈り物ではなく、愛、喜び、心からの感情を表現するものと信じています。私たちの旅は、新鮮で手作りのブーケをお届けし、あらゆる機会を特別にするというシンプルな使命から始まりました。
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50,000人+</h3>
+                            <p>幸せなお客様</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>小売店舗</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>年の経験</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <img src="https://binbadecor.vn/wp-content/uploads/2021/04/thiet-ke-shop-hoa-tuoi-nho-3.jpg"
+                        alt="Store Interior" class="image-main">
+                    <img src="https://i.pinimg.com/originals/6f/69/05/6f6905fa266a05361795a8b45665a9f6.jpg"
+                        alt="Shopping Experience" class="image-overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="shop-collection">
+        <div class="shop-collection-content">
+            <h1>エレガントなコレクション</h1>
+            <p>新鮮で厳選された花々</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="product-section" id="productSection">
+            <div class="container">
+                <div id="products-grid" class="products-grid">
+                    <div class="loader">
+                        <div class="loader-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                            <path d="M3 6h18" />
+                            <path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg>
+                    </div>
+                    <h3>プレミアム品質の商品</h3>
+                    <p>最高品質の素材とデザインを厳選。すべての商品が最高水準の品質と耐久性を満たしています。自信を持ってお買い物をお楽しみください。</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                    </div>
+                    <h3>充実のカスタマーサポート</h3>
+                    <p>専任のサポートチームが24時間365日対応。お問い合わせからアフターサービスまで、スムーズでストレスのないショッピング体験を保証します。</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        </svg>
+                    </div>
+                    <h3>安全なショッピング環境</h3>
+                    <p>最新の暗号化技術と安全な決済システムで安心してお買い物を。個人情報と取引データは常に保護されています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faqSection">
+        <div class="container">
+            <div class="faq-header">
+                <h2>よくあるご質問</h2>
+                <p>商品やサービスに関するよくある質問と回答</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>配送にはどのくらい時間がかかりますか？</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>国内配送は通常3-5営業日です。国際配送は目的地により7-14営業日かかります。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>返品ポリシーを教えてください</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>未使用品かつ元の包装での30日間返品を受け付けています。アカウントから返品手続きを行い、送料無料のラベルを発行します。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>国際発送は可能ですか？</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、世界中のほとんどの国へ発送可能です。配送料金と日数は地域によって異なります。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>注文の追跡方法は？</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>発送後に追跡番号をメールでお送りします。アカウントの「注文履歴」からも確認可能です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>品質保証はありますか？</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>すべての商品に満足保証が付いています。購入後90日以内にカスタマーサービスまでご連絡ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ギフトラッピングは可能ですか？</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>追加料金にて承ります。チェックアウト時に選択可能で、メッセージカードも同封可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>会社概要</h4>
+                    <p class="footer-about">
+                        私たちは単なるショッピングを超えた体験を創造します。品質と顧客満足へのこだわりが、1970年から続く信頼の理由です。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>ショップ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#productSection">新着商品</a></li>
+                        <li><a href="#productSection">コレクション</a></li>
+                </div>
+                <div class="footer-col">
+                    <h4>カスタマーケア</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>メルマガ登録</h4>
+                    <p class="newsletter-text">新商品情報やセール情報をいち早くお届け</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="メールアドレスを入力" required>
+                        <button type="submit">登録</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 everbloom.site. 全著作権所有。</p>
+                <div class="footer-bottom-links">
+                    <a href="#aboutSection">会社概要</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="terms.html">利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isOpen = faqItem.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!isOpen) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
