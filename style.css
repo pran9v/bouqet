@@ -702,7 +702,7 @@ h1 {
 /* Features Section */
 .features-section {
   padding: 6rem 0;
-  background-color: #fff;
+  background-color: #EDE0D4;;
 }
 
 .features-grid {
@@ -2129,10 +2129,9 @@ h1 {
 
 /* Shop Collection Section */
 .shop-collection {
-  background-image: linear-gradient(#EDE0D4, rgba(127, 85, 57, 0.5)),
+  background-image: linear-gradient(rgba(174, 118, 81, 0.5), #EDE0D4),
     url("https://images.unsplash.com/photo-1644248423203-80e317d78aee?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
-
 .shop-collection-content h1 {
   color:rgb(55 31 8 / 87%);
 }
